@@ -1,0 +1,17 @@
+.navbar {
+    background-color: lightblue;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+}
+
+.navbar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+}
+.navbar-item {
+    
+}
