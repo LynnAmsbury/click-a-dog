@@ -15,17 +15,20 @@
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
+    font-weight: bold;
+    align-items: center;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 5px solid rgb(241, 241, 241);
+    border-radius: 3px;
+    width: 25%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
   .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
   }
   

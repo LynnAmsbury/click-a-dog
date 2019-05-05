@@ -47,7 +47,7 @@ class Game extends Component {
         if (newScore > topScore) {
           newTopScore = newScore;
           if (newTopScore === 12) {
-            this.showModal("ATTA DOG! YOU WON! YOU GET A TREAT!", "assets/images/you-won-dog.png")
+            this.showModal("ATTA DOG! YOU WON!", "assets/images/you-won-dog.png")
           }
         }
         
