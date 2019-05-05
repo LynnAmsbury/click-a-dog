@@ -6,7 +6,7 @@ This project is a front-end React app that functions as an image memory game.
 React, Reactstrap, shuffle-array npm package
 
 ## Playing the game
-Navigate to the app: https://lynnamsbury.github.io/click-a-dog/
+Navigate to the app's homepage: https://click-a-dog.herokuapp.com/
 
 There are 12 clickable images. Users click on an image to gain a point.
 
