@@ -1,0 +1,7 @@
+.navbar .correct {
+    animation: .4s correct;
+}
+  
+.navbar .incorrect {
+    animation: .4s incorrect;
+}

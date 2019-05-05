@@ -1,8 +1,15 @@
 .navbar {
-    background-color: lightblue;
-    margin-bottom: 20px;
-    padding: 20px 0px;
-}
+    background: tan;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: white;
+    font-size: calc(10px + (24 - 10) * (100vw - 320px) / (1200 - 400));
+    text-align: center;
+    z-index: 99;
+    white-space: nowrap;
+  }
 
 .navbar-grid {
     display: grid;
@@ -12,7 +19,21 @@
     width: 100%;
     list-style-type: none;
 }
-.navbar-item {
-    font-size: 30px;
-    font-weight: bold;
-}
+  
+/* .navbar ul {
+    margin: 0;
+    padding: 0;
+} */
+  
+/* .navbar li {
+    display: inline-block;
+    padding: 26px 0px;
+    width: 33.3%;
+    text-align: center;
+} */
+  
+/* .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+} */

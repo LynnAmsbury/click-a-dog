@@ -7,6 +7,7 @@ import ClickItem from "../ClickItem";
 import Footer from "../Footer";
 import pictures from "../../pictures.json";
 
+// Game logic
 class Game extends Component {
 
     state = {
@@ -24,7 +25,7 @@ class Game extends Component {
     let shuffledPictures = Array.from(pictures);
     shuffledPictures.sort(() => Math.random() - 0.5);
       if (alreadyClicked.includes(id)) {
-        console.log("You Lose!");
+        alert("AWWWW, POOR DOGGY. YOU LOST. NO TREAT FOR NOW.");
         this.setState({
           message: "Bad Dog! You Guessed Incorrectly!",
           // Set score to 0
@@ -42,6 +43,9 @@ class Game extends Component {
         let newTopScore = topScore;
         if (newScore > topScore) {
           newTopScore = newScore;
+          if (newTopScore === 12) {
+            alert("ATTA DOG! YOU WON! YOU GET A TREAT!")
+          }
         }
         
         this.setState({

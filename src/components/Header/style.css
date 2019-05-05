@@ -1,3 +1,18 @@
 .header {
-    background-color: blue;
-}
+    background-color: #2C323C;
+    background-image: url("/assets/images/dog-print-wallpaper.png");
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: brown;
+    min-height: 400px;
+    padding: 180px 20px; 
+    padding-bottom: 140px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 4rem;
+  }

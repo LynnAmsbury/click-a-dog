@@ -9,12 +9,13 @@ function Nav(props) {
   return (
     <nav className="navbar">
       <ul className="navbar-grid">
-        <li className="navbar-item">
+      {/* <ul> */}
+        <li className="brand">
           <a href="/">Click-A-Dog Game</a>
         </li>
-        <li className="navbar-item"><NavMessage message={props.message} />
-        </li>
-        <li className="navbar-item">
+        <NavMessage message={props.message} />
+        {/* <NavMessage score={props.score} topScore={props.topScore} /> */}
+        <li>
           Score: {props.score} | Top Score: {props.topScore}
         </li>
       </ul>
