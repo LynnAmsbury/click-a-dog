@@ -5,6 +5,7 @@ import Header from "../Header";
 import Container from "../Container";
 import ClickItem from "../ClickItem";
 import Footer from "../Footer";
+import Modal from "../Modal";
 import pictures from "../../pictures.json";
 
 // Game logic
@@ -12,10 +13,12 @@ class Game extends Component {
 
     state = {
       message: "Click on any picure to start",
+      modalMessage: "",
       pictures: pictures,
       score: 0,
       topScore: 0,
-      alreadyClicked: []
+      alreadyClicked: [],
+      showModal: false
     }
   
   imageClick = (id) => {
@@ -25,7 +28,7 @@ class Game extends Component {
     let shuffledPictures = Array.from(pictures);
     shuffledPictures.sort(() => Math.random() - 0.5);
       if (alreadyClicked.includes(id)) {
-        alert("AWWWW, POOR DOGGY. YOU LOST. NO TREAT FOR NOW.");
+        this.showModal("AWWWW, POOR DOGGY. YOU LOST.", "assets/images/you-lost-dog.png");
         this.setState({
           message: "Bad Dog! You Guessed Incorrectly!",
           // Set score to 0
@@ -44,7 +47,7 @@ class Game extends Component {
         if (newScore > topScore) {
           newTopScore = newScore;
           if (newTopScore === 12) {
-            alert("ATTA DOG! YOU WON! YOU GET A TREAT!")
+            this.showModal("ATTA DOG! YOU WON! YOU GET A TREAT!", "assets/images/you-won-dog.png")
           }
         }
         
@@ -56,6 +59,10 @@ class Game extends Component {
           alreadyClicked: newAlreadyClicked
         })
       }
+  }
+
+  showModal(message, image) {
+   this.setState({modalMessage: message, modalImage: image, showModal: true})
   }
   
     render() {
@@ -71,6 +78,7 @@ class Game extends Component {
             handleClick={this.imageClick} />
           ))}
         </Container>
+        <Modal message={this.state.modalMessage} image={this.state.modalImage} show={this.state.showModal} onClose={()=>this.setState({showModal:false})} />
         <Footer />
       </div>
     );

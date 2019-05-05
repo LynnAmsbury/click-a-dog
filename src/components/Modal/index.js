@@ -1,7 +1,5 @@
 // Require in Dependencies
-// Require in Dependencies
 import React from "react";
-// import NavMessage from "../NavMessage";
 import "./style.css";
 
 class Modal extends React.Component {
@@ -10,24 +8,27 @@ class Modal extends React.Component {
         this.closeModal = this.closeModal.bind(this)
         this.state = {
             message: props.message,
-            show: false
+            image: props.image,
+            show: props.show
         }
     }
     componentWillReceiveProps(nextProps) {
-        this.setState({message: nextProps.message})
+        console.log("Modal received props", nextProps)
+        this.setState({message: nextProps.message, show: nextProps.show, image: nextProps.image})
     }
 
     closeModal () {
-        this.setState({show: false});
-    }
+        this.props.onClose();
+    } 
 
     render() {
         return(
-            <div id="myModal" className="modal">
+            <div id="myModal" className="modal" style={{display: this.state.show ? "block" : "none"}} >
 
             <div className="modal-content">
                 <span className="close" onClick={this.closeModal} >&times;</span>
                 <p>{this.state.message}</p>
+                <img src={ this.state.image } alt="character" style={{ height: 170, width: 170 }} />
             </div>
 
             </div>
