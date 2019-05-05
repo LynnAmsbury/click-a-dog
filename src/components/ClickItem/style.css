@@ -1,5 +1,18 @@
 .click-item {
     border: 1px solid grey;
-    height: 170px;
+    position: relative;
     width: 170px;
+    height: 170px;
+    overflow: hidden;
 }
+  
+  .click-image {
+    position: absolute;
+    /* top: -999px;
+    left: -999px;
+    right: -999px;
+    bottom: -999px; */
+    height: 170px;
+    /* width: 170px; */
+    margin: auto;
+  }

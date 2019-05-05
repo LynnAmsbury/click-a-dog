@@ -13,5 +13,6 @@
     list-style-type: none;
 }
 .navbar-item {
-    
+    font-size: 30px;
+    font-weight: bold;
 }

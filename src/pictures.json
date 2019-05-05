@@ -1,74 +1,74 @@
 [
     {
       "id": 1,
-      "name": "White Labrador Retriever Puppies",
-      "image": "data:image/jpeg;base64,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",
+      "name": "Light Golden Retriever Puppy",
+      "image":"assets/images/Light-Golden-Retriever-Puppy.png",
       "clicked": false
     },
     {
       "id": 2,
       "name": "Puppy in a Cup",
-      "image": "https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Puppy-in-a-Cup.png",
       "clicked": false
     },
     {
       "id": 3,
       "name": "Beagle",
-      "image": "https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "image": "assets/images/Beagle.jpeg",
       "clicked": false
     },
     {
       "id": 4,
       "name": "Pug",
-      "image": "https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Pug.png",
       "clicked": false
     },
     {
       "id": 5,
       "name": "Winking Puppy",
-      "image": "https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Winking-Puppy.png",
       "clicked": false
     },
     {
       "id": 6,
       "name": "Cute White Puppy",
-      "image": "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg",
+      "image": "assets/images/Cute-White-Puppy.png",
       "clicked": false
     },
     {
       "id": 7,
       "name": "Dog in Sunglasses",
-      "image": "https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Dog-in-Sunglasses.png",
       "clicked": false
     },
     {
       "id": 8,
       "name": "Husky",
-      "image": "https://images.pexels.com/photos/434090/pexels-photo-434090.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Husky.png",
       "clicked": false
     },
     {
       "id": 9,
       "name": "Happy Dog",
-      "image": "https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Happy-Dog.png",
       "clicked": false
     },
     {
       "id": 10,
       "name": "German Shepherd",
-      "image": "https://images.pexels.com/photos/350428/pexels-photo-350428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/German-Shepherd.png",
       "clicked": false
     },
     {
       "id": 11,
       "name": "Jumping Dog",
-      "image": "https://images.pexels.com/photos/1906153/pexels-photo-1906153.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Jumping-Dog.png",
       "clicked": false
     },
     {
       "id": 12,
       "name": "Dalmatian",
-      "image": "https://images.pexels.com/photos/933498/pexels-photo-933498.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "image": "assets/images/Dalmatian.png",
       "clicked": false
     }
   ]

@@ -12,7 +12,7 @@ function ClickItem(props) {
       
       className="click-item"
       >
-      <img src={ props.image } alt="character" style={{ width: 200 }} />
+      <img src={ props.image } alt="character" style={{ height: 170, width: 170 }} />
     </div>
   );
 }
